@@ -1,0 +1,27 @@
+{
+  "name": "politically",
+  "version": "0.0.1",
+  "description": "A possible donor identifier for upcoming campaigns",
+  "main": "index.js",
+  "scripts": {
+    "test": "multi-tape test/*.js",
+    "file-ingestion": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannypaz/politically.git"
+  },
+  "author": "dannypaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dannypaz/politically/issues"
+  },
+  "homepage": "https://github.com/dannypaz/politically#readme",
+  "devDependencies": {
+    "multi-tape": "1.1.1",
+    "tape": "4.8.0"
+  },
+  "dependencies": {
+    "lodash.isempty": "4.4.0"
+  }
+}
