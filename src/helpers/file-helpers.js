@@ -41,4 +41,5 @@ function readFile(filepath, callback) {
 
 module.exports = {
   readFile,
+  handleAllFileErrors,
 };

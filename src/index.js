@@ -19,24 +19,24 @@ const INPUT_FILENAME = 'itcont.txt';
 const INPUT_FILE = path.resolve('./input', INPUT_FILENAME);
 
 /**
- * Outputs information when file is closed or complete
- *
- * @return {Void}
- */
-function closeFile() {
-  return console.log(`File processing for ${INPUT_FILE} completed at ${new Date().toISOString()}`);
-}
-
-/**
  * File ingestion handler. Uses #fileHelpers and #report to parse files from `input`
  *
  * @return {void}
  */
 function main() {
-  console.log(`Starting file processing for ${INPUT_FILE} on ${new Date().toISOString()}`);
-  return fileHelpers.readFile(INPUT_FILE, report.processLine).on('close', closeFile);
+  console.log(`File processing for ${INPUT_FILE} on ${new Date().toISOString()}`);
+  fileHelpers.readFile(INPUT_FILE, report.processLine);
+  return console.log(`File processing for ${INPUT_FILE} completed at ${new Date().toISOString()}`);
 }
 
-main();
+if (process.env.NODE_ENV === 'production') {
+  return main();
+}
+
+module.exports = {
+  main,
+  filename: INPUT_FILENAME,
+  file: INPUT_FILE,
+}
 
 

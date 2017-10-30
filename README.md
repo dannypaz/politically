@@ -36,3 +36,8 @@ writing files, on every run I will delete the output folder and recreate.
 
 1. medianvals_by_date
 2. medianvals_by_zip
+
+### Testing
+
+I opted for using "tape" because it was a minimalist testing library. If I were to keep expanding this project I would reach
+for a larger featured library like Mocha/Chai.

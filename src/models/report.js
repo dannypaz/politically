@@ -52,4 +52,8 @@ function processLine(line) {
 
 module.exports = {
   processLine,
+  separater: SEPARATER,
+  field_offset: FIELD_OFFSET,
+  fields: FIELDS,
+  formatters: FORMATTERS,
 };
