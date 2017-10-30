@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/dannypaz/politically#readme",
   "devDependencies": {
-    "multi-tape": "1.1.1",
     "tape": "4.8.0"
   },
   "dependencies": {

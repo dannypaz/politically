@@ -87,5 +87,7 @@ module.exports = {
   path: OUTPUT_FILE,
   separater: SEPARATER,
   addLineToOutput,
+  validZipCode,
+  formatLine,
 };
 
